@@ -1,11 +1,14 @@
+// Exercise - Stars
+// JavaScript Basics for Beginners
 
-showStars(2);
+console.time('Performance')
+showStars(5)
+console.timeEnd('Performance')
 
-function showStars(rows) {
+function showStars (rows) {
   for (let row = 1; row <= rows; row++) {
-    let pattern = '';
-    for (let i = 0; i < row; i++)
-      pattern += '*'; 
-    console.log(pattern);
+    let pattern = ''
+    for (let i = 0; i < row; i++) { pattern += '*' }
+    console.log(pattern)
   }
-} 
+}
