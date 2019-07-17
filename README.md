@@ -1,4 +1,4 @@
-<img height="50" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg">
+<img height="70" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg">
 
 # Udemy
 This is a repository for my activity in Udemy online courses. It includes the all the :closed_book: notes, :floppy_disk: coding files and :file_cabinet: projects from each courses that I have taken in Udemy.
