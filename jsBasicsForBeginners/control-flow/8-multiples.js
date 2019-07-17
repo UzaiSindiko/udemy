@@ -1,12 +1,19 @@
+// Exercise - Sum of Multiples 3 and 5
+// JavaScript Basics for Beginners
 
-console.log(sum(10));
+console.time('Performance')
+console.log(sum(10))
+console.timeEnd('Performance')
 
-function sum(limit) {
-  let sum = 0;
+// Multiples of 3: 3, 6, 9
+// Multiples of 5: 5, 10
 
-  for (let i = 0; i <= limit; i++)
-    if (i % 3 === 0 || i % 5 === 0)
-      sum += i;
+function sum (limit) {
+  let sum = 0
 
-  return sum; 
+  for (let i = 0; i <= limit; i++) {
+    if (i % 3 === 0 || i % 5 === 0) { sum += i }
+  }
+
+  return sum
 }
