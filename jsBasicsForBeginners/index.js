@@ -185,3 +185,42 @@ for (let color of colors) {
 // Truthy & Falsy Value
 const isTruthy = 'Andreas'
 if (isTruthy) console.log('Hello')
+
+// Object Literal - key-value pairs
+const circle = {
+  radius: 1, // properties
+  location: {
+    x: 1,
+    y: 1
+  },
+  isVisible: true,
+  draw: function () { // function
+    console.log('draw')
+  }
+}
+
+circle.draw() // Method
+
+// Factory Function (using Camel Notation) -> produce objects
+function createCircle (radius) {
+  return {
+    radius, // if key-value pairs are same, you can write it radius, instead of radius: radius
+    draw () { // another way to write function inside an object
+      console.log('draw')
+    }
+  }
+}
+
+const circle1 = createCircle(1)
+console.log(circle1)
+
+// Constructor Function (using Pascal Notation) -> produce objects
+function Circle (radius) {
+  this.radius = radius
+  this.draw = function () {
+    console.log('draw')
+  }
+}
+
+// this operator creates an empty object, return the parameter of object from the function
+const circle2 = new Circle(1)
