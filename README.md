@@ -5,3 +5,4 @@ This is a repository for my activity in Udemy online courses. It includes the al
 
 # Courses Taken:
 ### [:open_file_folder: JavaScript Basics for Beginner ](https://github.com/andreassosilo/udemy/tree/master/jsBasicsForBeginners)
+### [:open_file_folder: Node.js: The Complete Guide to Build RESTful APIs ](https://github.com/andreassosilo/udemy/tree/master/nodeJS)
