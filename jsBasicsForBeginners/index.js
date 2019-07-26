@@ -224,3 +224,52 @@ function Circle (radius) {
 
 // this operator creates an empty object, return the parameter of object from the function
 const circle2 = new Circle(1)
+
+// Two ways to iterating an array -> for-of and forEach()
+let numbers = [1, 2, 3]
+// Using for-of
+for (let number of numbers) {
+  console.log(number)
+}
+// Using forEach()
+numbers.forEach((number, index) => { console.log(index, number) })
+
+// Joining arrays
+const joined = numbers.join(',')
+console.log(joined)
+
+// Split a string to an array
+const messages = 'This is my first message'
+const parts = messages.split(' ')
+console.log(parts)
+
+// How to sort an array -> use sort() or reverse()
+numbers = [2, 3, 1]
+console.log(numbers.sort())
+console.log(numbers.reverse())
+
+// How to sort object in an array
+let courses = [
+  { id: 1, name: 'Node.js' },
+  { id: 2, name: 'javaScript' }
+]
+console.log(courses.sort(function (a, b) {
+  const nameA = a.name.toLowerCase()
+  const nameB = b.name.toLowerCase()
+  if (nameA < nameB) return -1
+  if (nameA > nameB) return 1
+  return 0
+}))
+
+// Testing the elements of array using -> every() and some()
+numbers = [1, -1, 2, 3]
+const allPositive = numbers.every(function (value) { return value >= 0 })
+console.log('every() -> all element must return true: ' + allPositive)
+
+const atLeastOnePositive = numbers.some(function (value) { return value >= 0 })
+console.log('some() -> one element is true is enough : ' + atLeastOnePositive)
+
+// Filtering an array using filter()
+numbers = [1, -1, 2, 3]
+const filtered = numbers.filter(function (value) { return value >= 0 })
+console.log('Filtered array: ' + filtered)
