@@ -287,3 +287,10 @@ items = numbers
   .filter(obj => obj.value > 1)
   .map(obj => obj.value)
 console.log(items)
+
+// Reducing an array to a single element -> using reduce()
+numbers = [1, -1, 2, 3]
+let sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue
+}, 0)
+console.log(sum)
